@@ -1,0 +1,49 @@
+---
+import { getCollection, getEntryBySlug } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import Hero from "../../components/templates/quinceanera/coquette/Hero.astro";
+import Welcome from "../../components/templates/quinceanera/coquette/Welcome.astro";
+import Date from "../../components/templates/quinceanera/coquette/Date.astro";
+import Asistencia from "../../components/templates/quinceanera/coquette/Asistencia.astro";
+import Detalles from "../../components/templates/quinceanera/coquette/Detalles.astro";
+
+export async function getStaticPaths() {
+  const entries = await getCollection("quinceaneras");
+  return entries.map((entry) => ({
+    params: { slug: entry.slug },
+  }));
+}
+
+const { slug } = Astro.params;
+const entry = await getEntryBySlug("quinceaneras", slug);
+
+if (!entry) {
+  return new Response(null, {
+    status: 404,
+    statusText: "Quinceañera no encontrada",
+  });
+}
+
+const {
+  tipo,
+  plantilla,
+  nombre_completo,
+  padres,
+  padrinos,
+  misa,
+  recepcion,
+  fecha_evento,
+  fecha_legible,
+} = entry.data;
+
+const { Content } = await entry.render();
+---
+
+<Layout>
+  <Hero />
+  <Welcome />
+  <Content />
+  <Date fecha_evento={fecha_evento} fecha_legible={fecha_legible} />
+  <Detalles misa={misa} recepcion={recepcion} />
+  <Asistencia />
+</Layout>
