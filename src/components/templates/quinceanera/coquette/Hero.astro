@@ -5,7 +5,11 @@ const { nombre } = Astro.props;
 <section
   class="w-screen h-[70vh] flex justify-center items-center relative bg-[#EA9193] bg-cover bg-center"
 >
-  <div class="relative w-full h-full mx-auto overflow-hidden">
+  <div
+    class="relative w-full h-full mx-auto overflow-hidden"
+    data-aos="fade-up"
+    data-aos-delay="400"
+  >
     <img
       src="/assets/invitations/galya-1439/portada.jpg"
       alt=""
@@ -13,7 +17,12 @@ const { nombre } = Astro.props;
       '
     />
   </div>
-  <div class="mx-auto absolute -bottom-15">
+  <div
+    class="mx-auto absolute -bottom-15"
+    data-aos="flip-up"
+    data-aos-delay="800"
+    data-aos-offset="200"
+  >
     <img src="/assets/invitations/melany-4846/icon.png" alt="" class="" />
   </div>
 </section>
