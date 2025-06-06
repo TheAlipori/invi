@@ -24,5 +24,5 @@ recepcion:
   lugar: Salón Durango Palace
   hora: 9:00 p.m.
   direccion: Calle Revolucion Mexicana num 1508 Col. Ampliación 20 de Noviembre
-  link: "https://maps.app.goo.gl/oa7UxFM24ZGnJdci6?g_st=aw"
+  link: "https://maps.app.goo.gl/gmwXX4dM2d5wu8xLA"
 ---
