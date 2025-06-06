@@ -25,4 +25,5 @@ recepcion:
   hora: 9:00 p.m.
   direccion: Calle Revolucion Mexicana num 1508 Col. Ampliación 20 de Noviembre
   link: "https://maps.app.goo.gl/XLSq1JvYpFPTG94LA"
+encuesta: "https://docs.google.com/forms/d/e/1FAIpQLSeMHcuAZboXviX0mEbMJgdFC7gNzcgO_09uzFyBG_W2FoNxng/viewform?usp=header"
 ---

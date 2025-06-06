@@ -34,6 +34,7 @@ const {
   recepcion,
   fecha_evento,
   fecha_legible,
+  encuesta,
 } = entry.data;
 
 const { Content } = await entry.render();
@@ -45,5 +46,5 @@ const { Content } = await entry.render();
   <Content />
   <Date fecha_evento={fecha_evento} fecha_legible={fecha_legible} />
   <Detalles misa={misa} recepcion={recepcion} />
-  <Asistencia />
+  <Asistencia encuesta={encuesta} />
 </Layout>

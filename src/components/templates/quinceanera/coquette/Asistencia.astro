@@ -1,5 +1,6 @@
 ---
 // const { numerowp, colorPrimario } = Astro.props;
+const { encuesta } = Astro.props;
 ---
 
 <section
@@ -22,11 +23,11 @@
     mucha alegría.
   </p>
   <a
-    href=`https://wa.me/526182061439?text=Hola,%20confirmo%20mi%20asistencia.`
+    href={encuesta}
     target="_blank"
     rel="noopener noreferrer"
     class=`bg-rose-300 hover:bg-rose-400 text-white px-6 py-3 rounded-full text-lg font-medium transition`
   >
-    Confirmar por WhatsApp
+    Confirmar Asistencia
   </a>
 </section>
