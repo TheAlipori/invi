@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@fontsource-variable/merriweather": "^5.2.3",
+    "@fontsource/rouge-script": "^5.2.5",
     "@tailwindcss/vite": "^4.1.8",
     "aos": "^2.3.4",
     "astro": "^5.8.1",

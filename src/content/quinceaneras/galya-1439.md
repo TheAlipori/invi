@@ -10,7 +10,7 @@ Padres:
 Padrinos:
   padrino: Francisco Larreta Vargas
   madrina: Ofelia Norton Paez
-fecha_evento: "2025-06-21T17:00:00"
+fecha_evento: "2025-07-05T18:00:00"
 fecha_legible:
   dia: 05
   mes: Julio
@@ -21,7 +21,7 @@ misa:
   hora: 6:00 p.m.
   link: "https://maps.app.goo.gl/BoGDEQPhqp6R95BT7"
 recepcion:
-  lugar: Durango Palace
+  lugar: Salón Durango Palace
   hora: 9:00 p.m.
   direccion: Calle Revolucion Mexicana num 1508 Col. Ampliación 20 de Noviembre
   link: "https://maps.app.goo.gl/i5nYHPTnsyaW92H47"
